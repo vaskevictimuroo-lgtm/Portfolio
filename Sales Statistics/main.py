@@ -40,7 +40,7 @@ def get_sales_stats():
 app = FastAPI()
 @app.get("/")
 def get_app():
-    return {"app": "zhan lox"}
+    return {"app": "sales statistics"}
 
 @app.get("/sales")
 def get_sales():
