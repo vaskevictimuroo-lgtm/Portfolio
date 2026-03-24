@@ -15,9 +15,7 @@ class VpnButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: isConnected
-            ? const Color(0xFF000000)
-            : const Color(0xFFFFFFFF),
+        backgroundColor: isConnected ? const Color(0xFF20FF00) : const Color(0xFFFFFFFF),
       ),
       child: Text(isConnected ? "Отключить" : "Подключить"),
     );
