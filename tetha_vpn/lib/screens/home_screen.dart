@@ -33,21 +33,23 @@ class _VpnHomePageState extends State<VpnHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Align(
-            alignment: const Alignment(0, -0.5),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                VpnButton(
-                  isConnected: _isConnected,
-                  onPressed: _toggleVpn,
-                ),
-              ],
+      body: Center(
+        child: Stack(
+          children: [
+            Align(
+              alignment: const Alignment(0, -0.5),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  VpnButton(
+                    isConnected: _isConnected,
+                    onPressed: _toggleVpn,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        )
       ),
     );
   }
