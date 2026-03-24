@@ -9,8 +9,11 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_vless: ^1.0.4
+  flutter_vless_android_emulator: ^1.0.1
   cupertino_icons: ^1.0.8
   http: ^1.1.0
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.0
 
 dev_dependencies:
   flutter_test:
