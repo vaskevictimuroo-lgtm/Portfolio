@@ -11,12 +11,12 @@ class ConfigRepository {
   }
 
   void add(VlessConfig config) {
-    _box.put(config.url, config);
+    _box.put(config.id, config);
   }
 
   void addAll(List<VlessConfig> configs) {
     for (final config in configs) {
-      _box.put(config.url, config);
+      _box.put(config.id, config);
     }
   }
 

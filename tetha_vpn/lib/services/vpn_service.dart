@@ -106,6 +106,7 @@ class VpnService {
 
     // Создаем конфиги
     final configs = urls.map((url) => VlessConfig(
+      id: url.hashCode.toString(),
       url: url,
       subscriptionId: subscription.id,
       ping: 0,

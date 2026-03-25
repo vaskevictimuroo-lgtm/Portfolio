@@ -5,21 +5,25 @@ part 'vless_config.g.dart';
 @HiveType(typeId: 1)
 class VlessConfig {
   @HiveField(0)
-  final String url;
+  final String id;
 
   @HiveField(1)
-  final String subscriptionId;
+  final String url;
 
   @HiveField(2)
-  int ping;
+  final String subscriptionId;
 
   @HiveField(3)
-  bool isActive;
+  int ping;
 
   @HiveField(4)
+  bool isActive;
+
+  @HiveField(5)
   DateTime lastChecked;
 
   VlessConfig({
+    required this.id,
     required this.url,
     required this.subscriptionId,
     required this.ping,
